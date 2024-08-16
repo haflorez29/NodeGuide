@@ -4,9 +4,9 @@
   "description": "Node Learning",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js",
-    "dev": "echo 'Hola mundo desde dev'"
+    "test": "echo 'Hola mundo desde dev'",
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/haflorez29/NodeGuide/issues"
   },
-  "homepage": "https://github.com/haflorez29/NodeGuide#readme"
+  "homepage": "https://github.com/haflorez29/NodeGuide#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
