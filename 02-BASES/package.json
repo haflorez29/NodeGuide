@@ -1,0 +1,24 @@
+{
+  "name": "02-bases",
+  "version": "0.0.1",
+  "description": "Node Learning",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "echo 'Hola mundo desde dev'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haflorez29/NodeGuide.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Heidy Florez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haflorez29/NodeGuide/issues"
+  },
+  "homepage": "https://github.com/haflorez29/NodeGuide#readme"
+}
