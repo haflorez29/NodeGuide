@@ -23,5 +23,9 @@
   "homepage": "https://github.com/haflorez29/NodeGuide#readme",
   "devDependencies": {
     "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "get-age": "^1.0.1",
+    "uuid": "^10.0.0"
   }
 }
