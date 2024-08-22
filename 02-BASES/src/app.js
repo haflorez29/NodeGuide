@@ -14,7 +14,11 @@
 // });
 // -------------------------------------------
 // factoryFunction
-require('./js-foundation/05-factory')
+const { getUUID, getAgeAdapter } = require('./plugins')
+const { buildMakePerson } = require('./js-foundation/05-factory')
 
+const makePerson = buildMakePerson({ getUUID, getAgeAdapter })
+const john = makePerson({ name: 'Yose', birthdate: '2000-12-04' })
+console.log(john);
 
 
