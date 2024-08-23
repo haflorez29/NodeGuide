@@ -14,11 +14,14 @@
 // });
 // -------------------------------------------
 // factoryFunction
-const { getUUID, getAgeAdapter } = require('./plugins')
-const { buildMakePerson } = require('./js-foundation/05-factory')
+// const { getUUID, getAgeAdapter } = require('./plugins')
+// const { buildMakePerson } = require('./js-foundation/05-factory')
 
-const makePerson = buildMakePerson({ getUUID, getAgeAdapter })
-const john = makePerson({ name: 'Yose', birthdate: '2000-12-04' })
-console.log(john);
-
-
+// const makePerson = buildMakePerson({ getUUID, getAgeAdapter })
+// const john = makePerson({ name: 'Yose', birthdate: '2000-12-04' })
+// console.log(john);
+// ------------------------------------------------
+const getPokemonById = require('./js-foundation/06-promises.js')
+getPokemonById(1)
+.then(pokemon =>console.log(pokemon))
+.catch(err=>{console.log('Intente otro')});
