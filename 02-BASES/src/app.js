@@ -21,7 +21,12 @@
 // const john = makePerson({ name: 'Yose', birthdate: '2000-12-04' })
 // console.log(john);
 // ------------------------------------------------
-const getPokemonById = require('./js-foundation/06-promises.js')
-getPokemonById(1)
-.then(pokemon =>console.log(pokemon))
-.catch(err=>{console.log('Intente otro')});
+// const getPokemonById = require('./js-foundation/06-promises.js')
+// getPokemonById(1)
+// .then(pokemon =>console.log(pokemon))
+// .catch(err=>{console.log('Intente otro')});
+// -------------------------------------------------
+const { buildLogger }= require('./plugins')
+const logger = buildLogger('Aapp.js')
+logger.log('hola mundo')
+logger.error('Esto es un error')
