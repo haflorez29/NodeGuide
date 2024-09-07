@@ -1,4 +1,4 @@
-// import { yarg } from "./config/plugins/args.plugin";
+import { yarg } from "./config/plugins/args.plugin";
 
 // // console.log(process.env);
 // // argumento que se envian a node para ejecutarse
@@ -11,9 +11,12 @@
 
 // funcion autoinvocada asyncrona
 (async()=>{
-    await main;
+    await main();
 })();
 
 async function main(){
-    console.log('Main ejecutado');
+    console.log(yarg);
+    const {b} = yarg
+    console.log(b);
+    
 }
