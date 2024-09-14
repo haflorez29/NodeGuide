@@ -20,6 +20,18 @@ export const yarg = yargs(hideBin(process.argv))
     default: false,
     describe: "Show multiplication table",
   })
+  .option("n", {
+    alias: "fileName",
+    type: "string",
+    default: "table",
+    describe: "File name for multiplication table",
+  })
+  .option("d", {
+    alias: "destination",
+    type: "string",
+    default: './output',
+    describe: "File destination for multiplication table",
+  })
   .check((argv, options) => {    
     if (argv.b! < 0) throw "Error: base argument must be a number";
     return true
